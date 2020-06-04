@@ -42,15 +42,7 @@ body {
 .text-white {
   color: #fff !important;
 }
-.text-semiwhite {
-  color: $semi-white !important;
-}
-.text-red {
-  color: $red;
-}
-.text-blue {
-  color: $blue !important;
-}
+
 .text-upper {
   text-transform: uppercase;
 }
@@ -69,43 +61,6 @@ body {
 }
 .w-90 {
   width: 90% !important;
-}
-
-.title {
-  color: #263238;
-  font-size: 32px;
-  font-weight: 700;
-  padding: 0 10px;
-  line-height: 1.2;
-  text-align: center;
-
-  @include tablet{
-    font-size: 30px;
-  }
-
-  @include mobile-large {
-    font-size: 28px;
-  }
-
-  @include mobile {
-    font-size: 25px;
-    padding: 0 5px;
-  }
-}
-
-.default-section {
-  padding: 120px 0;
-
-  @include tablet {
-    padding: 100px 0;
-  }
-
-  @include mobile-large {
-    padding: 80px 0;
-  }
-  @include mobile {
-    padding: 60px 0;
-  }
 }
 
 .text-center {
@@ -134,80 +89,4 @@ body {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  padding: 10px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  border: 2px solid $blue;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #555555;
-  font-weight: 700;
-  transition: all .3s ease-in;
-  text-align: center;
-  flex-shrink: 0;
-
-  &::before {
-    font-family: 'Font Awesome 5 Free';
-    font-size: 18px;
-    font-weight: 900;
-    margin-right: 12px;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-    background-color: $blue;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(24, 117, 186, .7);
-  }
-
-  &--cabinet {
-    &::before {
-      content: "\f2f6";
-    }
-  }
-
-  &--connection {
-    background-color: $blue;
-    color: #fff;
-
-    &::before {
-      content: "\f1e6";
-    }
-  }
-
-  &--news {
-    min-width: 33.3333%;
-    &::before {
-      content: "\f35a";
-    }
-  }
-
-  &--plane {
-    &::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 400;
-      content: "\f1d8";
-    }
-  }
-  &--book {
-    color: #fff;
-
-    &::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 700;
-      content: "\f2b5";
-    }
-  }
-
-  @include mobile-large {
-    width: 90%;
-  }
 }

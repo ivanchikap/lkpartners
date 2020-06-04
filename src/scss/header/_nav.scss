@@ -1,0 +1,26 @@
+.nav {
+
+    &__btn {
+        display: none;
+    }
+    &__item {
+        padding: 10px;
+
+        & + & {
+            margin-left: 20px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: $grey;
+        font-size: 1.3rem;
+        border-bottom: 2px solid transparent;
+        font-family: $pt-sans;
+        font-weight: 700;
+
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
