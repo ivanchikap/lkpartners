@@ -3,24 +3,28 @@
     &__btn {
         display: none;
     }
-    &__item {
-        padding: 10px;
 
+    &__item {
         & + & {
-            margin-left: 20px;
+            margin-left: 16px;
         }
     }
-    &__link {
-        display: inline-block;
-        color: $grey;
-        font-size: 1.3rem;
-        border-bottom: 2px solid transparent;
-        font-family: $pt-sans;
-        font-weight: 700;
 
-        &:hover {
-            color: #fff;
-            border-color: #fff;
+    &__link {
+        padding: 10px;
+        display: inline-block;
+        color: lighten($black, 25%);
+        font-size: 1.2rem;
+        font-family: $roboto;
+        font-weight: 500;
+        transition: all .3s linear;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &:hover, &:focus {
+            color: $black;
         }
     }
 }
