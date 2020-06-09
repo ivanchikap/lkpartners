@@ -59,7 +59,7 @@
             top: 20px;
             right: 58px;
             z-index: 10;
-            transform: translateX(900px);
+            transform: translateX(800px);
             transition: transform .6s ease-out;
             box-shadow: 0 0 10px rgba(0, 0, 0, .2);
             border-radius: 6px;
@@ -73,6 +73,7 @@
             }
             @include mobile {
                 min-width: 92%;
+                top: 72px;
             }
 
             &--active {
@@ -107,8 +108,9 @@
         font-weight: 500;
         transition: all .3s linear;
 
-        @include tablet {
-            padding: 10px;
+        @include mobile-large {
+            padding: 4px 6px;
+            font-size: 1.15rem;
         }
 
         &:last-child {
