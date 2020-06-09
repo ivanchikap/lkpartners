@@ -31,12 +31,27 @@
   }
   &__img {
     float: right;
-    width: 33.3333%;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 28%;
     height: auto;
     margin-left: 10px;
     margin-bottom: 4px;
     @include mobile {
       display: none;
     }
+  }
+
+  &__principle {
+    display: flex;
+    &::before {
+      content: '>';
+      margin-right: 10px;
+      display: inline-block;
+    }
+    & + & {
+      margin-top: 10px;
+    }
+
   }
 }

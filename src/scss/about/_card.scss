@@ -12,11 +12,14 @@
   &__title {
     padding: 10px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-family: $roboto-slab;
+    font-size: 1.4rem;
   }
   &__text {
     padding: 0 10px 10px 10px;
     color: lighten($black, 20%);
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   &__img {
