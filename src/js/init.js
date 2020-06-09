@@ -1,23 +1,27 @@
 (function () {
-    let nav = $('.nav');
+    // .header-nav навигация
+    let nav = $('.nav__list');
+    let btn = $('.nav__btn');
+    let close = $('.nav__close');
+    let logo =  $('.header__logo');
 
-    // .nav__btn - кнопка меню
-    $('.nav__btn').click(function () {
-        let curHeight = nav.height();
-        let autoHeight = nav.css('height', 'auto').height();
-        if (nav.hasClass('nav--active')) {
-            nav.removeClass('nav--active');
-            nav.height(curHeight).animate({height: 0}, 0)
+    // .menu-btn - кнопка меню
+    $(btn).click(function () {
+        if (nav.hasClass('nav__list--active')) {
+            nav.removeClass('nav__list--active');
+            close.hide();
         } else {
-            nav.addClass('nav--active');
-            nav.height(curHeight).animate({height: autoHeight}, 0)
+            nav.addClass('nav__list--active');
+            btn.hide();
+            // logo.addClass('mx-sm-auto');
+            close.show();
         }
     });
-    $("#pricing-tabs").tabs(        {
-            show: { effect: "blind", duration: 900 }
-        }
-    );
+    $(close).click(function () {
+        nav.removeClass('nav__list--active');
+        setTimeout(function () {
+            btn.show();
+            // logo.removeClass('mx-auto');
+        }, 500);
+    });
 })();
-$(document).ready(function(){
-    $('.your-class').slick();
-});

@@ -4,10 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 
   &__info {
     max-width: 620px;
     margin-top: 100px;
+    padding: 0 15px;
+
+    @include tablet {
+      margin-top: 246px;
+      max-width: 100%;
+    }
+    @include mobile {
+      padding: 0 10px;
+      margin-top: 260px;
+    }
   }
 
   &__title {
@@ -15,6 +26,14 @@
     text-align: center;
     font-family: $balsamiq-sans;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+    @include mobile {
+      font-size: 2.1rem;
+      letter-spacing: -1px;
+    }
   }
 
   &__wrapper {
@@ -24,12 +43,23 @@
     width: 100%;
     min-height: 100px;
     padding: 20px 0;
+
+    @include mobile-large {
+      padding: 15px 0;
+    }
   }
 
   &__logo {
-    width: 300px;
+    width: 280px;
     height: auto;
     flex-shrink: 0;
+
+    @include tablet {
+      width: 240px;
+    }
+    @include mobile-large {
+      width: 220px;
+    }
 
     img {
       width: 100%;
@@ -43,6 +73,14 @@
 
     .btn:last-child {
       margin-left: 40px;
+
+      @include mobile-large {
+        margin-left: 6px;
+      }
+      @include mobile {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   }
 }

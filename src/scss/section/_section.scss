@@ -2,13 +2,33 @@
   padding: 40px 0;
 
   &__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $balsamiq-sans;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     max-width: 70%;
-    margin: 20px auto;
+    margin: 20px auto 14px auto;
     text-transform: uppercase;
+
+    &::before, &::after {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &::before {
+      background-image: url("../img/arrow-left.png");
+      margin-right: 10px;
+    }
+
+    &::after {
+      background-image: url("../img/arrow-right.png");
+      margin-left: 10px;
+    }
 
     @include mobile {
       max-width: 100%;
@@ -19,12 +39,11 @@
     font-size: 16px;
   }
   &__subtitle, &__desc {
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.4;
-    max-width: 50%;
-    margin: 14px auto;
+    max-width: 80%;
+    margin: 0 auto;
 
     @include tablet {
       max-width: 60%;

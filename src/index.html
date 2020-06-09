@@ -19,7 +19,7 @@
 
     <header class="header pos-relative">
         <div class="header__wrapper">
-            <div class="container d-flex align-items-center justify-content-between">
+            <div class="container d-flex align-items-center justify-content-between pos-relative">
                 <a href="http://lkpartners.com.ua" class="header__logo">
                     <img src="img/logo-1.png" alt="lkpartners-logo">
                 </a>
@@ -29,11 +29,15 @@
                         <span class="nav__btn-bar"></span>
                         <span class="nav__btn-bar"></span>
                     </div>
-                    <ul class="nav__list d-flex align-items-center justify-content-between flex-wrap">
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Про нас </a></li>
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Послуги адвокатів</a></li>
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Інші послуги</a></li>
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Контакти</a></li>
+                    <ul class="nav__list d-flex align-items-center justify-content-between flex-wrap flex-md-column align-items-md-start pos-relative">
+                        <li class="nav__close">
+                            <i class="fas fa-times"></i>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#about">Про нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">Новини</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#services">Послуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#other-services">Інші послуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contacts">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,92 +63,88 @@
     </header>
     <!-- / header -->
     <main>
-
-    </main>
-    <!-- /main -->
-   <!-- <footer class="footer">
-        <div class="footer__main">
+        <section class="section about" id="about">
             <div class="container">
-                <div class="footer__row">
-                    <div class="footer__col-4">
-                        <h4 class="footer__title">Про компанію</h4>
-                        <p class="footer__text">Компанія CiD.net – інтернет провайдер сучасного  рівня, що була створена в смт. Пісківка в 2011 році та працює і розвивається для своїх абонентів. Оптична мережа сучасного рівня надає можливість забезпечувати якісну послугу та задовольняти найвибагливіших абонентів.</p>
+                <h2 class="section__title">Про нас</h2>
+                <h3 class="section__subtitle">«L.K.Partners» - команда адвокатів і юристів, об'єднана багаторічної спільною роботою і успішною практикою.</h3>
+                <article class="about__coop clearfix">
+                    <div class="about__img">
+                        <img src="img/cooperation.jpg" alt="cooperation-img">
                     </div>
-                    &lt;!&ndash; / footer__col-4 &ndash;&gt;
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title&#45;&#45;join">Контакти</h4>
-                        <ul class="footer__contacts-list">
-                            <li class="footer__contacts-item footer__contacts-item&#45;&#45;address d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="#">Адреса офісу – смт.Пісківка, вул.Філіпова, буд.13Е (аптека №1), 2 поверх.</a>
-                            </li>
-                            <li class="footer__contacts-item footer__contacts-item&#45;&#45;tel d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="tel: +380633879191">+38063-387-9191</a>
-                            </li>
-                            <li class="footer__contacts-item footer__contacts-item&#45;&#45;tel d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="tel: +380963869191">+38096-386-9191</a>
-                            </li>
-                            <li class="footer__contacts-item  footer__contacts-item&#45;&#45;mail d-flex align-items-center">
-                                <a class="footer__contact link-decor-on-hover" href="mailto:info@cid.net.ua">info@cid.net.ua</a>
-                            </li>
-                        </ul>
-                    </div>
-                    &lt;!&ndash; / footer__col-4 &ndash;&gt;
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title&#45;&#45;help">Тарифи</h4>
-                        <ul class="footer__default-list">
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#business">Тарифи для бізнесу</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#private">Тарифи для приватного сектору c.Пісківка, с.Мигалки</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#apartment">Тарифи для багатоквартирних будинків с.Пісківка</a>
-                            </li>
-                            <li class="footer__default-item d-flex align-items-center">
-                                <a class="footer__default-contact link-decor-on-hover" href="./pricing.html#village">Тарифи для приватного сектору с.Кухарі, с.Раска, с.Олива, с.Заруддя, с.Слобода Кухарська</a>
-                            </li>
-                        </ul>
-                    </div>
-                    &lt;!&ndash; / footer__col-4 &ndash;&gt;
-                    <div class="footer__col-4">
-                        <h4 class="footer__title footer__title&#45;&#45;follow">Слідкуй за нами тут</h4>
-                        <ul class="footer__socials-list d-flex">
-                            <li class="footer__social-item">
-                                <a target="_blank" class="footer__social-contact footer__social-contact&#45;&#45;facebook" href="https://www.facebook.com/cid.net.ua/">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a target="_blank" class="footer__social-contact footer__social-contact&#45;&#45;telegram" href="https://t.me/cidnetua">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="footer__shedule">
-                            <h5 class="footer__shedule-title">
-                                Графік роботи
-                            </h5>
-                            <ul class="footer__contacts-list">
-                                <li class="footer__contacts-item footer__contacts-item&#45;&#45;clock d-flex align-items-center">
-                                    <span class="footer__contact">Графік роботи офісу: пн.-пт. з 09:00 до 18:00, сб.-нд. - вихідні</span>
-                                </li>
-                                <li class="footer__contacts-item footer__contacts-item&#45;&#45;clock d-flex align-items-center">
-                                    <span class="footer__contact">Графік роботи технічної підтримки: пн.-пт. з 09:00 до 21:00, сб.-нд. – з 12:00 до 18:00</span>
-                                </li>
-                            </ul>
+                    <h4 class="about__coop-title">Співпраця</h4>
+                    <p class="about__coop-text">Тісна співпраця з партнерами на професійному ринку послуг, серед яких - аудиторські, консалтингові компанії та нотаріальні контори, дозволяє комплексно, відповідно до українських та міжнародних стандартів, підходити до вирішення завдань, що стоять перед нашими клієнтами.</p>
+                </article>
+                <article class="about__coop">
+                    <h4 class="about__coop-title">Привабливі особливості «L.K.Partners» для існуючих і потенційних клієнтів:</h4>
+                    <div class="row">
+                        <div class="d-flex col-3">
+                            <article class="card">
+                                <div class="card__img">
+                                    <img class="card__pic" src="img/lawyer.jpg" alt="about-card-picture">
+                                </div>
+                                <h4 class="card__title">Принцип Family Office</h4>
+                                <p class="card__text">«L.K.Partners» прагне розвивати довгострокові, конфіденційні і плідні відносини з клієнтами, пропонуючи строго певний спектр юридичних послуг, що відображають потреби своїх довірителів</p>
+                            </article>
+                        </div>
+                        <div class="d-flex col-3">
+                            <article class="card">
+                                <div class="card__img">
+                                    <img class="card__pic" src="img/lawyer.jpg" alt="about-card-picture">
+                                </div>
+                                <h4 class="card__title">Лояльність до довірителя</h4>
+                                <p class="card__text">«L.K.Partners» надає юридичні послуги, прагнучи використовувати весь свій досвід і ресурси на досягнення конкретного результату, значимого для клієнта. Робота в форматі 24/7 створює особливу атмосферу довіри між «L.K.Partners» і клієнтом</p>
+                            </article>
+                        </div>
+                        <div class="d-flex col-3">
+                            <article class="card">
+                                <div class="card__img">
+                                    <img class="card__pic" src="img/lawyer.jpg" alt="about-card-picture">
+                                </div>
+                                <h4 class="card__title">Консервативність в роботі з клієнтами</h4>
+                                <p class="card__text">Law firm «L.K.Partners» не прагне голосно заявляти про своє ім'я</p>
+                            </article>
+                        </div>
+                        <div class="d-flex col-3">
+                            <article class="card">
+                                <div class="card__img">
+                                    <img class="card__pic" src="img/lawyer.jpg" alt="about-card-picture">
+                                </div>
+                                <h4 class="card__title">Творчий підхід до пошуку рішень</h4>
+                                <p class="card__text">Результативність в рамках комплексних і складних судових процесів можлива тільки за умови застосування неординарного мислення</p>
+                            </article>
+                        </div>
+                        <div class="d-flex col-3">
+                            <article class="card">
+                                <div class="card__img">
+                                    <img class="card__pic" src="img/lawyer.jpg" alt="about-card-picture">
+                                </div>
+                                <h4 class="card__title">Освіта</h4>
+                                <p class="card__text">Адвокати і юристи, наші партнери є випускниками провідних українських ВНЗ, мають досвід роботи в органах прокуратури і слідства, судових органів, органів місцевого самоврядування, виконавчих органах та інших органів України.</p>
+                            </article>
                         </div>
                     </div>
-                    &lt;!&ndash; / footer__col-4 &ndash;&gt;
-                </div>
+                </article>
             </div>
+        </section>
+
+        <section class="section" id="services">
+            <h2 class="section__title">Послуги адвокатів</h2>
+        </section>
+
+        <section class="section" id="other-services">
+            <h2 class="section__title">Інші послуги</h2>
+        </section>
+
+        <section class="section" id="contacts">
+            <h2 class="section__title"> Контакти</h2>
+        </section>
+    </main>
+    <!-- /main -->
+    <footer class="footer">
+        <div class="container">
+            <span>© 2015 Інтернет-провайдер CID.net. Інтернет безмежних можливостей!</span>
         </div>
-        <div class="footer__copyright text-center">
-            <div class="container">
-                <span>© 2015 Інтернет-провайдер CID.net. Інтернет безмежних можливостей!</span>
-            </div>
-        </div>
-    </footer>-->
+    </footer>
     <!-- / footer -->
 
     <!-- jquery -->

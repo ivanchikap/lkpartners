@@ -1,0 +1,42 @@
+.about {
+
+  &__coop {
+    margin-top: 40px;
+
+    @include mobile-large {
+      margin-top: 30px;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+  &__coop-title {
+    font-size: 1.5rem;
+    font-family: $balsamiq-sans;
+    text-align: center;
+    margin-bottom: 8px;
+    @include mobile-large {
+      font-size: 1.3rem;
+    }
+  }
+  &__coop-text {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: 400;
+    @include mobile-large {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+  }
+  &__img {
+    float: right;
+    width: 33.3333%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    @include mobile {
+      display: none;
+    }
+  }
+}
