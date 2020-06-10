@@ -24,4 +24,8 @@
             // logo.removeClass('mx-auto');
         }, 500);
     });
+    $("#tabs").tabs( {
+            show: { effect: "blind", duration: 900 }
+        }
+    );
 })();
