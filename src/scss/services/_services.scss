@@ -3,24 +3,85 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
+    margin: 0 -5px;
   }
 
   &__list-item {
     width: 25%;
-    padding: 10px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+
+    &.ui-tabs-active {
+      .services__list-link {
+        transform: scale(1.05);
+        text-decoration: underline;
+        color: blue;
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2),
+        0px 2px 2px 0px rgba(0,0,0,0.14),
+        0px 2px 6px 0px rgba(0,0,0,0.12);
+      }
+    }
   }
 
   &__list-link {
-    display: inline-block;
+    font-family: $roboto-slab;
     box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2),
     0px 1px 1px 0px rgba(0,0,0,0.14),
     0px 1px 3px 0px rgba(0,0,0,0.12);
     background-color: #fff;
     border-radius: 4px;
     padding: 6px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-  }
+    width: 100%;
+    transition: all .3s ease-in;
 
+    &::before {
+      content: '';
+      display: block;
+      margin: 6px auto;
+      background-color: #aaa;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 80%;
+      height: 100px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    &:hover, &:active {
+      transform: scale(1.08);
+      text-decoration: underline;
+      box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2),
+      0px 2px 2px 0px rgba(0,0,0,0.14),
+      0px 2px 6px 0px rgba(0,0,0,0.12);
+    }
+
+    &--cryminal::before {
+      background-image: url("../img/cryminal.jpg");
+    }
+    &--admin::before {
+      background-image: url("../img/admin.jpg");
+    }
+    &--civil::before {
+      background-image: url("../img/civil.jpg");
+    }
+    &--commercial::before {
+      background-image: url("../img/commercial.jpg");
+    }
+    &--environment::before {
+      background-image: url("../img/environment.jpg");
+    }
+    &--family::before {
+      background-image: url("../img/family.jpg");
+    }
+    &--maritime::before {
+      background-image: url("../img/maritime.jpg");
+    }
+    &--tax::before {
+      background-image: url("../img/tax.jpg");
+    }
+  }
 }
