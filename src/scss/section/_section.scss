@@ -1,6 +1,13 @@
 .section {
   padding: 40px 0;
 
+  @include mobile-large {
+    padding: 30px 0;
+  }
+  @include mobile {
+    padding: 20px 0;
+  }
+
   &__title {
     font-family: $balsamiq-sans;
     font-size: 28px;
@@ -10,7 +17,13 @@
     text-transform: uppercase;
 
     @include mobile-large {
+      margin-top: 15px;
+      margin-bottom: 10px;
       font-size: 24px;
+    }
+    @include mobile {
+      font-size: 18px;
+      letter-spacing: -1px;
     }
 
     &::before, &::after {
@@ -22,16 +35,27 @@
       background-position: center;
       background-size: contain;
       background-color: transparent;
+
+      @include mobile {
+        width: 40px;
+      }
     }
 
     &::before {
       background-image: url("../img/arrow-left.png");
       margin-right: 10px;
+
+      @include mobile {
+        margin-right: 6px;
+      }
     }
 
     &::after {
       background-image: url("../img/arrow-right.png");
       margin-left: 10px;
+      @include mobile {
+        margin-left: 6px;
+      }
     }
 
     &--white::before {
@@ -40,14 +64,13 @@
     &--white::after {
       background-image: url("../img/arrow-right-white.png");
     }
-
-    @include mobile {
-      max-width: 100%;
-      font-size: 22px;
-    }
   }
   &__subtitle {
     font-size: 16px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
   &__subtitle, &__desc {
     text-align: center;
@@ -112,6 +135,13 @@
       color: $green;
       font-size: 16px;
       transform: rotate(45deg);
+      @include mobile {
+        font-size: 14px;
+        margin-right: 8px;
+      }
+    }
+    @include mobile {
+      font-size: 14px;
     }
   }
 }

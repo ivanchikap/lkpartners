@@ -5,6 +5,9 @@
     text-align: center;
     margin-bottom: 8px;
     min-height: 138px;
+    @include mobile {
+      min-height: auto;
+    }
     
     &::before {
       content: '';
