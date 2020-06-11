@@ -12,12 +12,12 @@
     padding: 0 15px;
 
     @include tablet {
-      margin-top: 246px;
+      margin-top: 232px;
       max-width: 100%;
     }
     @include mobile {
       padding: 0 10px;
-      margin-top: 260px;
+      margin-top: 190px;
     }
   }
 
@@ -83,12 +83,9 @@
     .btn:last-child {
       margin-left: 40px;
 
-      @include mobile-large {
-        margin-left: 6px;
-        margin-top: 10px;
-      }
       @include mobile {
         margin-left: 0;
+        margin-top: 10px;
       }
     }
     @include mobile-large {

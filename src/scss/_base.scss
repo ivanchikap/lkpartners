@@ -123,20 +123,22 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 6px 10px;
   border-radius: 6px;
   border: 2px solid $lemon;
   font-size: 1.3rem;
   font-weight: 500;
+  min-width: 200px;
   transition: all .3s linear;
 
   @include mobile-large {
+    min-width: 180px;
     font-size: 1.1rem;
     padding: 4px 6px;
   }
   @include mobile {
-    width: 270px;
+    width: 220px;
     padding: 2px 6px;
   }
 
@@ -161,8 +163,25 @@ body {
   transform: rotate(-35deg);
 
   @include mobile-large {
-    font-size: 1.8rem;
-    margin-right: 2px;
+    font-size: 1.6rem;
+    margin-left: 6px;
+  }
+
+  @include mobile {
+    margin-right: 18px;
+  }
+}
+.btn--facebook::before {
+  font-family: 'Font Awesome 5 Brands';
+  padding: 4px;
+  font-weight: 400;
+  content: "\f39e";
+  font-size: 1.8rem;
+  margin-right: 10px;
+
+  @include mobile-large {
+    margin-left: 6px;
+    font-size: 1.6rem;
   }
 
   @include mobile {

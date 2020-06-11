@@ -12,6 +12,9 @@
     font-weight: 500;
     font-family: $roboto-slab;
     letter-spacing: -1px;
+    @include tablet {
+      font-size: 1.2rem;
+    }
 
     &::before {
       display: block;
