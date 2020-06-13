@@ -24,8 +24,10 @@
           width: 20%;
 
           @include mobile-large {
-            width: 50%;
+            width: 33.3333%;
+            text-align: center;
             padding: 7px;
+            min-height: 48px;
           }
         }
         &__list-link {
@@ -39,24 +41,21 @@
             }
           }
           @include mobile-large {
-            text-align: left;
             display: flex;
             align-items: center;
+            justify-content: center;
+            text-align: center;
             &::before {
               margin: 0 8px 0 0;
               height: 40px;
               width: 30%;
+              @include mobile-large {
+                display: none;
+              }
             }
           }
           @include mobile {
-            font-size: 13px;
-            letter-spacing: -.5px;
-            padding: 3px;
-            &::before {
-              margin: 0 6px 0 0;
-              height: 30px;
-              width: 25%;
-            }
+            font-size: 14px;
           }
         }
       }
