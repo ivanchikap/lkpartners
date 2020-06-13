@@ -1,6 +1,6 @@
 .header {
   min-height: 100vh;
-  background: #eee url("../img/banner0.jpg") no-repeat center / cover;
+  background: #eee url("../img/banner4.jpg") no-repeat center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
     }
     @include mobile {
       padding: 0 10px;
-      margin-top: 190px;
+      margin-top: 220px;
     }
   }
 

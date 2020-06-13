@@ -51,6 +51,12 @@ body {
 .text-camel {
   text-transform: capitalize;
 }
+.ff-balsamic {
+  font-family: $balsamiq-sans;
+}
+.fz-15 {
+  font-size: 15px;
+}
 .fw-700 {
   font-weight: 700;
 }
@@ -76,7 +82,9 @@ body {
 .w-90 {
   width: 90% !important;
 }
-
+strong {
+  font-weight: bold;
+}
 .text-center {
   text-align: center;
 }
@@ -171,17 +179,18 @@ body {
     margin-right: 18px;
   }
 }
-.btn--facebook::before {
-  font-family: 'Font Awesome 5 Brands';
-  padding: 4px;
+
+.btn--email::before {
+  font-family: 'Font Awesome 5 Free';
+  padding: 4px 4px 4px 0;
   font-weight: 400;
-  content: "\f39e";
-  font-size: 1.8rem;
-  margin-right: 10px;
+  content: "\f0e0";
+  font-size: 2rem;
+  margin-right: 6px;
 
   @include mobile-large {
-    margin-left: 6px;
     font-size: 1.6rem;
+    margin-left: 6px;
   }
 
   @include mobile {

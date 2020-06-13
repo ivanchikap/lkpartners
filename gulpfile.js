@@ -29,7 +29,7 @@ function style() {
         .pipe(browserSync.stream());
 }
 function css() {
-    return gulp.src('src/css/**/*.css')
+    return gulp.src('src/css/**/*.*')
         .pipe(gulp.dest('build/css/'))
 }
 //css, когда будем подключать плагины то нужно чтоб css файлы копировались в build
