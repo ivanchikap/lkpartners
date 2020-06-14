@@ -29,6 +29,9 @@
             padding: 7px;
             min-height: 48px;
           }
+          @include mobile {
+            padding: 4px;
+          }
         }
         &__list-link {
           &::before {
@@ -55,7 +58,9 @@
             }
           }
           @include mobile {
-            font-size: 14px;
+            font-size: 13px;
+            letter-spacing: -1px;
+            font-weight: 400;
           }
         }
       }
