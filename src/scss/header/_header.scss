@@ -1,23 +1,39 @@
 .header {
-  min-height: 100vh;
-  background: #eee url("../img/banner4.jpg") no-repeat center / cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  &__slider {
+
+  }
 
   &__info {
-    max-width: 620px;
-    margin-top: 100px;
-    padding: 0 15px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 140px;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+
+    &--1 {
+      background-image: url("../img/banner4.jpg");
+    }
+    &--2 {
+      background-image: url("../img/banner00.jpg");
+    }
+    &--3 {
+      background-image: url("../img/banner22.jpg");
+    }
+
 
     @include tablet {
-      margin-top: 232px;
-      max-width: 100%;
+
     }
     @include mobile {
       padding: 0 10px;
-      margin-top: 220px;
     }
   }
 
@@ -26,14 +42,18 @@
     text-align: center;
     font-family: $balsamiq-sans;
     font-weight: 700;
+    padding: 0 15px;
+    width: 80%;
 
     @include tablet {
       font-size: 2.6rem;
     }
     @include mobile-large {
       line-height: 1.1;
+      width: 100%;
     }
     @include mobile {
+      margin-top: 180px;
       font-size: 2rem;
       letter-spacing: -1px;
     }
@@ -46,6 +66,7 @@
     width: 100%;
     min-height: 100px;
     padding: 20px 0;
+    z-index: 10;
 
     @include mobile-large {
       padding: 15px 0;
@@ -78,6 +99,7 @@
   }
 
   &__buttons {
+    width: 80%;
     margin-top: 40px;
 
     .btn:last-child {
@@ -90,6 +112,7 @@
     }
     @include mobile-large {
       margin-top: 20px;
+      width: 98%;
     }
   }
 }

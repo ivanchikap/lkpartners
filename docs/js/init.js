@@ -62,14 +62,21 @@ $(document).ready(function(){
             // logo.removeClass('mx-auto');
         }, 500);
     });
-    $("#tabs").tabs( {
-            show: { effect: "blind", duration: 900 }
-        }
-    );
+
     $("#tabs2").tabs( {
             show: { effect: "blind", duration: 900 }
         }
     );
+
+    $('.header__slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
 
 
     $('.news__slider').slick({
