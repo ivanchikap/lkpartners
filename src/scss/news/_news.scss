@@ -2,6 +2,14 @@
 
   .slick-dots {
     bottom: -10px;
+
+    @include mobile-large {
+      bottom: 0;
+    }
+
+    @include mobile {
+      bottom: 6px;
+    }
   }
 
   &__item {
