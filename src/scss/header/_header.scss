@@ -1,10 +1,6 @@
 .header {
   overflow: hidden;
 
-  &__slider {
-
-  }
-
   &__info {
     display: flex !important;
     justify-content: center;
@@ -108,12 +104,34 @@
     }
   }
   &__btn {
+    min-width: 25%;
+    @include tablet {
+      min-width: 33.3333%;
+    }
+    @include mobile-large {
+      min-width: 34%;
+    }
+    @include mobile {
+      margin-left: 0;
+      min-width: 60%;
+    }
     & + & {
       margin-left: 20px;
+      @include mobile {
+        margin-top: 20px;
+        margin-left: 0;
+      }
     }
     &:last-child {
       @include tablet {
         margin: 20px auto 0 auto;
+      }
+    }
+    span:first-child {
+      font-size: 18px;
+      font-weight: 500;
+      @include mobile-large {
+        font-size: 16px;
       }
     }
   }

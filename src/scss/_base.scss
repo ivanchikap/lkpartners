@@ -209,4 +209,7 @@ strong {
   min-height: 20px;
   font-size: 16px;
   color: #fff;
+  @include mobile {
+    font-size: 14px;
+  }
 }
